@@ -68,7 +68,7 @@ public class UserController {
 
 		List<String> errorList = new ArrayList<>();
 		if (name.length() == 0) {
-			errorList.add("名前必須です");
+			errorList.add("名前は必須です");
 		}
 		if (email.length() == 0) {
 			errorList.add("メールアドレスは必須です");

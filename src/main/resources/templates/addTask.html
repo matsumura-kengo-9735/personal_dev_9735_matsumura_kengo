@@ -42,7 +42,6 @@
 				<td>
 					<div class="cp_ipselect06">
 					<select  class="cp_sl06" name="categoriesId">
-						<option value="" hidden disabled selected></option>
 						<option th:each="category:${categories}" th:text="${category.name}"></option>
 					</select>
 					<span class="cp_sl06_selectbar"></span>
