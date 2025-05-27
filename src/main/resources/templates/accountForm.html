@@ -6,20 +6,20 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-	<header><h1>ToODリスト</h1></header>
+	<header><h2>ToDOリスト</h2></header>
 	<hr>
 	<main>
 	<h1>ユーザ新規登録</h1>
 	
 	<form action="/users/add" method="post">
 		
-		<ul th:if="${errorList}" class="error">
+		<ul th:if="${errorList}" class="error" style="list-style: none;">
 			<li th:each="error:${errorList}" th:text="${error}" style="color:red;"></li>
 		</ul>
 		
 		<div class="cp_iptxt mail"><input type="text" name="email" placeholder="メールアドレス" th:value="${email}"></div>
 		<div class="cp_iptxt user"><input type="text" name="name" placeholder="ユーザ名" th:value="${name}"></div>
-		<div class="cp_iptxt user"><input type="text" name="password" placeholder="パスワード"></div>
+		<div class="cp_iptxt user"><input type="password" name="password" placeholder="パスワード"></div>
 		<button>登録</button>
 	</form>
 	</main>

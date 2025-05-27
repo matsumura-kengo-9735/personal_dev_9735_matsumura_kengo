@@ -68,7 +68,7 @@ public class UserController {
 
 		List<String> errorList = new ArrayList<>();
 		if (name.length() == 0) {
-			errorList.add("名前は必須です");
+			errorList.add("名前は必須です  ");
 		}
 		if (email.length() == 0) {
 			errorList.add("メールアドレスは必須です");
@@ -126,6 +126,7 @@ public class UserController {
 		user.setEmail(email);
 		user.setName(name);
 		user.setPassword(password);
+		account.setName(name);
 		userRepository.save(user);
 
 		return "redirect:/users/mypege";

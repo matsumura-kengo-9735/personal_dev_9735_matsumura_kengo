@@ -6,6 +6,9 @@ body{
 	min-width:900px;
 }
 
+li{
+	margin:5px auto;
+}
 header{
 	background-color: rgb(100, 154, 198);
 	color:#ffffff;
@@ -419,6 +422,20 @@ h2:after {
 }
 .cp_iptxt input[type='text']:focus,
 .cp_iptxt input[type='text']:focus::after {
+  outline: none;
+}
+
+.cp_iptxt input[type='password'] {
+	text-align:center;
+  font: 15px/1.6 sans-serif;
+  width: calc(18% - 50px);
+  margin: 0 0 0 40px;
+  padding: 5px;
+  border: 0;
+  background: transparent;
+}
+.cp_iptxt input[type='password']:focus,
+.cp_iptxt input[type='password']:focus::after {
   outline: none;
 }
 /*テキストエリアのアイコン*/
